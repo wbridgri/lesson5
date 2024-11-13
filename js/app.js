@@ -16,10 +16,14 @@ let myName = document.getElementById('myName')
 
 myName.innerText = 'Will'
 
-myName.style.fontFamily = 'sans-serif'
-myName.style.color = 'rgb(255, 0, 0)'
+// myName.style.fontFamily = 'sans-serif'
+// myName.style.color = 'rgb(255, 0, 0)'
 
-console.log(myName);
+// console.log(myName);
+
+myName.classList.add('red')
+myName.classList.remove('red')
+myName.classList.add('darkgoldenrod')
 
 // // console.log(myName)
 
