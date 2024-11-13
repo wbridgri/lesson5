@@ -2,46 +2,64 @@
  * Document Object Model
  *      -looks like a tree diagram (roots, branches, nodes)
  * 
- * Accessing the DOM
- *
- *      byTagNames  for example: (p, ul, div)
- *      querySelector for example: (.class, id)
- *      querySelectorAll for example (.class, id)
- *      byId (id)
+ * 
+ * 
+ * Syntax:  
+ * 
+ *      function funcName(args) {
+ *          //do stuff
+ *          return statement 
+ *      }
+ * 
+ * funcName(args)
+ * 
+ * 
  */
 
-console.log(document.getElementById("myName"))
-
-let myName = document.getElementById('myName')
-
-myName.innerText = 'Will'
-
-// myName.style.fontFamily = 'sans-serif'
-// myName.style.color = 'rgb(255, 0, 0)'
-
-// console.log(myName);
-
-myName.classList.add('red')
-myName.classList.remove('red')
-myName.classList.add('darkgoldenrod')
-
-// // console.log(myName)
-
-// let hero = 'Superman';
-// let alias = 'Clark Kent';
-// let powers = ['super strength', 'x-ray vision', 'super speed', 'heat vision']
-// let enemies = ['Lex Luthor', 'Doomsay', 'Darkseid']
-
-// const heroName = document.getElementById('heroName');
-// heroName.innerText = hero;
 
 
 
-// const aliasName = document.getElementById('aliasName');
-// aliasName.innerText = alias;
+function add5(num) {
+    return num + 4;
+}
 
-// const powerList = document.getElementById('powerList');
-// const enemyList = document.getElementById('enemyList');
+console.log(add5)
+
+console.log(add5(5))
+
+
+
+// let string = 'Will'; //My way
+
+// function greetUser(string) {
+//     return `Good morning, ${string}`
+// }
+
+
+
+function greetUser(user = 'Guest') {
+return `Good Morning ${user}!`
+}
+
+// const greetUser = (user = 'Guest) => `Good morning, ${user}
+
+
+
+
+greetUser();
+
+// console.log(greetUser(string))/
+
+
+// function addTwoNumbers(a=4,b=5) {
+//     return a + b
+// }
+
+
+
+// console.log(addTwoNumbers(2,4));
+// console.log(addTwoNumbers(7));
+// console.log(undefined, 19);
 
 // //loop through array and create an li for each element, then append to powerList
 // powers.forEach(power => {
